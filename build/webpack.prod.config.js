@@ -16,24 +16,24 @@ const date = new Date();
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'production',
-  optimization: {
-    minimizer: [
-      // new UglifyjsPlugin({
-      //   cache: true,
-      //   parallel: true,
-      //   sourceMap: true
-      // }),
-      // new OptimizeCssAssetsPlugin(),
-      // new TerserPlugin({
-      //   cache: true,
-      //   parallel: true,
-      //   sourceMap: false, // Must be set to true if using source-maps in production
-      //   terserOptions: {
-      //     // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
-      //   }
-      // })
-    ]
-  },
+  // optimization: {
+  //   minimizer: [
+  //     new UglifyjsPlugin({
+  //       cache: true,
+  //       parallel: true,
+  //       sourceMap: fa
+  //     }),
+  //     new OptimizeCssAssetsPlugin(),
+  //     new TerserPlugin({
+  //       cache: true,
+  //       parallel: true,
+  //       sourceMap: false, // Must be set to true if using source-maps in production
+  //       terserOptions: {
+  //         // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
+  //       }
+  //     })
+  //   ]
+  // },
   plugins: [
     // new CopyWebpackPlugin([
     //   { from: resolve('static'), to: resolve('dist/static') }
