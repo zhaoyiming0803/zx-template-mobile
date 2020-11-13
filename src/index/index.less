@@ -1,0 +1,69 @@
+@import "../app.less";
+
+.app {
+  .banner {
+    width: 100%;
+    height: 3.9rem;
+    background: red;
+  }
+
+  .nav {
+    position: relative;
+    margin: -0.5rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 6.78rem;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0.16rem 0.266667rem 0 rgba(0,0,0,.04);
+    border-radius: 0.2rem;
+    .nav-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.2rem 0.2rem;
+      box-sizing: border-box;
+      font-size: 0.23rem;
+      color: #333;
+      font-family: "iconfont" !important;
+      overflow: hidden;
+      .icon {
+        flex-shrink: 0;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background: red;
+      }
+      .info {
+        flex-grow: 1;
+        padding-left: 0.2rem;
+        box-sizing: border-box;
+        .title {
+          font-size: 0.28rem;
+          font-weight: 600;
+          color: #333;
+        }
+        .subtitle {
+          font-size: 0.15rem;
+          color: #888;
+        }
+      }
+    }
+  }
+
+  .light-swiper {
+    overflow: hidden;
+    position: relative;
+    height: 3.9rem;
+    .swiper-wrap {
+      overflow: hidden;
+      position: relative;
+      .swipe-item {
+        float: left;
+        width: 100%;
+        position: relative;
+      }
+    }
+  }
+}

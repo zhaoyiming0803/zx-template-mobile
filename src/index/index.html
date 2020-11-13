@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=yes">
+    <link rel="icon" href="">
+    <title>index</title>
+    <script type="text/javascript">
+      ; (function (window, document) {
+        var dpr = window.devicePixelRatio || 1,
+          width = 750,
+          docEle = document.documentElement;
+
+        var resizeCall = (function () {
+          var clientWidth = docEle.clientWidth;
+          docEle.style.fontSize = Math.min(100 * (clientWidth / width), 64) + 'px';
+          return arguments.callee;
+        })();
+
+        dpr = dpr >= 3 ? 3 : dpr >= 2 ? 2 : 1;
+        docEle.setAttribute('data-dpr', dpr);
+
+        window.addEventListener('resize', resizeCall, false);
+      })(this, document);
+    </script>
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="banner light-swiper">
+        <div class="swiper-wrap">
+          <div class="swipe-item">1</div>
+          <div class="swipe-item">2</div>
+          <div class="swipe-item">3</div>
+          <div class="swipe-item">4</div>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="" class="nav-item home">
+          <i class="icon"></i>
+          <div class="info">
+            <div class="title">装修效果图</div>
+            <div class="subtitle single-ellipsis">2020全新海量装修案例图</div>
+          </div>
+        </a>
+        <a href="" class="nav-item price">
+          <i class="icon"></i>
+          <div class="info">
+            <div class="title">装修报价</div>
+            <div class="subtitle single-ellipsis">2020全新海量装修案例图</div>
+          </div>
+        </a>
+        <a href="" class="nav-item material">
+          <i class="icon"></i>
+          <div class="info">
+            <div class="title">装修材料</div>
+            <div class="subtitle single-ellipsis">2020全新海量装修案例图</div>
+          </div>
+        </a>
+        <a href="" class="nav-item question">
+          <i class="icon"></i>
+          <div class="info">
+            <div class="title">装修攻略</div>
+            <div class="subtitle single-ellipsis">2020全新海量装修案例图</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
