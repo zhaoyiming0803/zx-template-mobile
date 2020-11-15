@@ -22,7 +22,8 @@ const htmlMinify = {
 
 module.exports = {
   entry: {
-    index: resolve('src/index/index')
+    index: resolve('src/index/index'),
+    about: resolve('src/about/about')
   },
   output: {
     filename: '[name].[hash:8].js',
@@ -49,9 +50,16 @@ module.exports = {
       filename: 'list.html',
       minify: htmlMinify
     }),
+    new HtmlWebpackPlugin({
+      chunks: ['about'],
+      template: resolve('src/about/about.html'),
+      filename: 'about.html',
+      inlineSource: '.(js|css)$',
+      minify: htmlMinify
+    }),
     new HtmlWebpackInlineSourcePlugin(),
     new MiniCssExtractPlugin({
-      filename: 'index.[hash:8].css'
+      filename: '[name].[hash:8].css'
     }),
   ],
   module: {

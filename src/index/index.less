@@ -32,7 +32,22 @@
         width: 0.8rem;
         height: 0.8rem;
         border-radius: 50%;
-        background: red;
+        background-image: url("https://www.0351zhuangxiu.com/uploads/images/icon-nav.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        &.home {
+          background-position: 0 -4.6rem;
+        }
+        &.price {
+          background-position: 0 -2.8rem;
+        }
+        &.material {
+          background-position: 0 -11rem;
+        }
+        &.question {
+          background-position: 0 -10.1rem;
+        }
       }
       .info {
         flex-grow: 1;
@@ -45,24 +60,9 @@
           color: #333;
         }
         .subtitle {
-          font-size: 0.3rem;
+          font-size: 0.25rem;
           color: #888;
         }
-      }
-    }
-  }
-
-  .light-swiper {
-    overflow: hidden;
-    position: relative;
-    height: 3.9rem;
-    .swiper-wrap {
-      overflow: hidden;
-      position: relative;
-      .swipe-item {
-        float: left;
-        width: 100%;
-        position: relative;
       }
     }
   }
@@ -74,6 +74,10 @@
     overflow: hidden;
     width: 6.78rem;
     height: 1.3rem;
+    .icon {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .pics {
@@ -102,9 +106,19 @@
         overflow: hidden;
         text-align: center;
         font-size: 0.28rem;
+        a {
+          text-align: center;
+          color: #333;
+        }
         .pic {
-          width: 90%;
-          border-radius: 0.1rem;
+          display: block;
+          overflow: hidden;
+          padding: 0.1rem;
+          box-sizing: border-box;
+          img {
+            height: 2.5rem;
+            border-radius: 0.1rem;
+          }
         }
       }
     }
@@ -183,8 +197,30 @@
   }
 
   .footer {
+    padding: 0.3rem;
+    box-sizing: border-box;
     width: 100%;
-    height: 3rem;
-    background-color: #252525;
+    text-align: center;
+    background-color: #2e2e2e;
+    color: #888;
+    .qrcode {
+      width: 2rem;
+      height: 2rem;
+    }
+    .tips {
+      margin-bottom: 0.2rem;
+      font-size: 0.2rem;
+    }
+    .copyright {
+      line-height: 0.5rem;
+      font-size: 0.2rem;
+    }
+    .links {
+      font-size: 0.1rem;
+      a {
+        padding: 0.1rem;
+        color:  #2a2a2a;
+      }
+    }
   }
 }
